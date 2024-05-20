@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Weather App</title>
+</head>
+<body>
+    <main>
+        <h1>Responsive Weather App powered by the Open Weather A P I</h1>
+        <section id ="searchBar" class="searchBar">
+            <form action="" id="searchBar-form" class="searchBar-form" role="search">
+                <label for="searchBar-text">Enter a new location</label>
+                <input type="text" id="searchBar-text" class="searchBar-text" role="searchbox" size="40" autocomplete="off" placeholder="city, state, country">
+                <button id="searchBar-button" class="searchBar-button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions or forecasts">Submit</button>
+            </form>
+        </section>
+        <section id="currentForcast" class="currentForcast"></section>
+        <nav id="navButtons" class="navButtons"></nav>
+        <section id="dailyForscast" class="dailyForscast"></section>
+    </main>
+</body>
+</html>
