@@ -50,9 +50,82 @@
           </button>
         </form>
       </section>
-      <section id="currentForcast" class="currentForcast"></section>
-      <nav id="navButtons" class="navButtons"></nav>
-      <section id="dailyForscast" class="dailyForscast"></section>
+      <a href="#currentForcast" class="skip-link">Skip to Current Conditions</a>
+      <section
+        id="currentForcast"
+        class="currentForcast"
+        role="region"
+        aria-labelledby="currentForcast-location"
+      >
+        <h2 id="currentForcast-location" class="currentForcast-location">
+          Current Conditions
+        </h2>
+        <div
+          id="currentForcast-conditions"
+          class="currentForcast-conditions"
+        ></div>
+      </section>
+      <a href="#dailyForcast" class="skip-link">Skip to Six Day Forecast </a>
+      <nav id="navButtons" class="navButtons">
+        <button
+          id="getLocation"
+          class="button"
+          title="Get Location"
+          aria-label="Get the current weather conditions for your current location"
+        >
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+        <button
+          id="home"
+          class="button"
+          title="Home Weather"
+          aria-label="Get the current weather conditions for your home location"
+        >
+          <i class="fas fa-home"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+        <button
+          id="saveLocation"
+          class="button"
+          title="Save Location"
+          aria-label="Save the Current Location as your home location"
+        >
+          <i class="fas fa-save"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+        <button
+          id="unit"
+          class="button"
+          title="Toggle Measurement Units"
+          aria-label="Toggle between metric and imperial measurements unit"
+        >
+          <i class="fas fa-chart-bar"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+        <button
+          id="refresh"
+          class="button"
+          title="Refresh Weather"
+          aria-label="Refresh the current weather conditions"
+        >
+          <i class="fas fa-sync-alt"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+      </nav>
+      <hr />
+      <section
+        id="dailyForscast"
+        class="dailyForscast"
+        role="region"
+        aria-labelledby="dailyForcast-title"
+      >
+        <h2 id="dailyForscast-title" class="dailyForcast-title">
+          Six Day Forecast
+        </h2>
+        <div id="dailyForcast-contents" class="dailyForcast-contents"></div>
+      </section>
+      <p id="confirmation" class="offscreen" aria-live="assertive"></p>
     </main>
   </body>
 </html>
