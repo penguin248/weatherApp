@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Weather App</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <h1>Responsive Weather App powered by the Open Weather A P I</h1>
-        <section id ="searchBar" class="searchBar">
-            <form action="" id="searchBar-form" class="searchBar-form" role="search">
-                <label for="searchBar-text">Enter a new location</label>
-                <input type="text" id="searchBar-text" class="searchBar-text" role="searchbox" size="40" autocomplete="off" placeholder="city, state, country">
-                <button id="searchBar-button" class="searchBar-button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions or forecasts">Submit</button>
-            </form>
-        </section>
-        <section id="currentForcast" class="currentForcast"></section>
-        <nav id="navButtons" class="navButtons"></nav>
-        <section id="dailyForscast" class="dailyForscast"></section>
+      <h1>Responsive Weather App powered by the Open Weather A P I</h1>
+      <section id="searchBar" class="searchBar">
+        <form
+          action=""
+          id="searchBar-form"
+          class="searchBar-form"
+          role="search"
+        >
+          <label for="searchBar-text">Enter a new location</label>
+          <input
+            type="text"
+            id="searchBar-text"
+            class="searchBar-text"
+            role="searchbox"
+            size="40"
+            autocomplete="off"
+            placeholder="city, state, country"
+          />
+          <button
+            id="searchBar-button"
+            class="searchBar-button"
+            title="Submit Location"
+            aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions or forecasts"
+          >
+            <i class="fa fa-search"></i>
+            <i class="fas fa-sync fa-spin"></i>
+          </button>
+        </form>
+      </section>
+      <section id="currentForcast" class="currentForcast"></section>
+      <nav id="navButtons" class="navButtons"></nav>
+      <section id="dailyForscast" class="dailyForscast"></section>
     </main>
-</body>
+  </body>
 </html>
